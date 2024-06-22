@@ -90,7 +90,7 @@ class MainActivity : ListActivity() {
             CursorAdapter(context,c, autoRequery){
                 // Nak tunjuk apa // onCreateViewHolder
         override fun newView(context: Context?, cursor: Cursor?, parent: ViewGroup?): View {
-            return View.inflate(context, R.layout.activity_main,null)
+            return View.inflate(context, R.layout.custom_row,null)
         }
         // Link kan ui element ke data // onBindViewHolder
         override fun bindView(view: View?, context: Context?, cursor: Cursor?) {
